@@ -23,20 +23,20 @@ spec:
         tier: db
         project: expense
 
-  spec:
-    containers:
-    - name: mysql
-      image: joindevops/mysql:v1
-      readinessProbe:
-        tcpSocket:
-          port: 3306
-        initialDelaySeconds: 15
-        periodSeconds: 10
-      livenessProbe:
-        tcpSocket:
-          port: 3306
-        initialDelaySeconds: 15
-        periodSeconds: 10
+    spec:
+      containers:
+      - name: mysql
+        image: joindevops/mysql:v1
+        readinessProbe:
+          tcpSocket:
+            port: 3306
+          initialDelaySeconds: 15
+          periodSeconds: 10
+        livenessProbe:
+          tcpSocket:
+            port: 3306
+          initialDelaySeconds: 15
+          periodSeconds: 10
 
 ---
 apiVersion: apps/v1
