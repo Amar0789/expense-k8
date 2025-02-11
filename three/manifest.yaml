@@ -31,13 +31,13 @@ metadata:
   labels:
     project: expense
     environment: dev
-  spec:
-    type: LoadBalancer
-    selector:
-      project: expense
-      environment: dev
-    ports:
-    - name: frontend
-      protocol: TCP
-      port: 80
-      targetPort: 80
+spec:
+  type: LoadBalancer
+  selector:
+    project: expense
+    environment: dev
+  ports:
+  - name: frontend
+    protocol: TCP
+    port: 80
+    targetPort: 80
