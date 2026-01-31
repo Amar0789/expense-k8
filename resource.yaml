@@ -1,4 +1,10 @@
 apiVersion: v1
-kind: Namespace
-metadata: 
-  name: new
+kind: Pod
+metadata:
+  name: one
+  labels:
+    dev: prod
+spec:
+  containers:
+  - name: nginx
+    image: nginx
