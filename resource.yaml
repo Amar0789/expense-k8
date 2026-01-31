@@ -1,13 +1,8 @@
 apiVersion: v1
-kind: Pod
+kind: ConfiMap
 metadata:
-  name: nginx
+  name: cmp
   labels:
     env: dev
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-    env:
-      - name: environment
-        value: dev
+data:
+  ram: 1gi
