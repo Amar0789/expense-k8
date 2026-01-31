@@ -9,5 +9,5 @@ spec:
   - name: nginx
     image: nginx
     env:
-    - name: environment
-      value: dev
+      - name: environment
+        value: dev
