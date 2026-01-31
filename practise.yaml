@@ -1,7 +1,10 @@
 apiversion: eksctl.io/v1
 kind: ClusterConfig
+metadata:
+  name: expense
+  region: us-east-1
 managedNodeGroups:
-- name: CLuster1
-  instance_Type: t3.medium
-  desired_Capacity: 3
-  spot: true
+  - name: CLuster1
+    instanceType: t3.medium
+    desiredCapacity: 3
+    spot: true
