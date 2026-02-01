@@ -17,6 +17,7 @@ metadata:
   labels:
     new: yess
 spec:
+  type: NodePort
   selector:
     envs: dev
   ports:
