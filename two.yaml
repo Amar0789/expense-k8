@@ -6,6 +6,6 @@ spec:
   containers:
   - name: nginx
     image: nginx
-    env:
-    - name: enccvvdxcdws
-      value: rehagbrsdg
+    envFrom:
+    - confiMapRef:
+       name: cmp
