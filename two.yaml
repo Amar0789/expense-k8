@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pod1
   labels:
-    env: dev
+    envs: dev
 spec:
   containers:
   - name: nginx
@@ -18,7 +18,7 @@ metadata:
     new: yes
 spec:
   selector:
-    env: dev
+    envs: dev
   ports:
   - name: svc-port
     protocol: TCP
